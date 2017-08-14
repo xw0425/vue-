@@ -1,11 +1,18 @@
 import Vue from 'vue';
-import App from './App.vue';
-
-let vm = new Vue({
+import VueResource from 'vue-resource';
+import VueRouter from 'vue-router';
+import MintUi from 'mint-ui';
+import 'mint-ui/lib/style.css';
+import 'mui/dist/css/mui.css';
+import 'mui/examples/hello-mui/css/icons-extra.css';
+Vue.use(VueRouter);
+Vue.use(VueResource);
+Vue.use(MintUi);
+import App from '../component/App.vue';
+import router from './router.js';
+new Vue({
     el: '#app',
-    // 使用render方法把根组件渲染到el关联的视图中
-    render: function(c) {
-        return c(App);
-    }
+   render:c=>c(App),
+   router
+   
 });
-
