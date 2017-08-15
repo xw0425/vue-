@@ -8,6 +8,7 @@ import 'mui/examples/hello-mui/css/icons-extra.css';
 Vue.use(VueRouter);
 Vue.use(VueResource);
 Vue.use(MintUi);
+import './filter.js';
 import App from '../component/App.vue';
 import router from './router.js';
 new Vue({
