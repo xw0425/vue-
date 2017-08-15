@@ -2,5 +2,7 @@ const domain = 'http://139.199.192.48:8888';
 export default {
     domain: domain,
     newsList: domain + '/api/getnewslist',
-    newsDetails: domain + '/api/getnew/'
+    newsDetails: domain + '/api/getnew/',
+    commentPut: domain + '/api/postcomment/',
+    commentList: domain + '/api/getcomments/',
 };
